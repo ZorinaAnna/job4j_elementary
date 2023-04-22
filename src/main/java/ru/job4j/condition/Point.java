@@ -9,18 +9,13 @@ public class Point {
         this.y = y;
     }
 
-    public double distanceTo(Point that) {
+    public double distance(Point that) {
 
         return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 
     public static double distance(int x1, int y1, int x2, int y2) {
-        int one = x2 - x1;
-        int two = y2 - y1;
-        double three = Math.pow(one, 2);
-        double four = Math.pow(two, 2);
-        double five = three + four;
-        return Math.sqrt(five);
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
     public static void main(String[] args) {
@@ -37,7 +32,7 @@ public class Point {
         System.out.println("y1 = " + a.y);
         System.out.println("y2 = " + b.y);
 
-        double result = a.distanceTo(b);
+        double result = a.distance(b);
         System.out.println("Расстояние между точками А и В : " + result);
         System.out.println("Расстояние между точками А и В : " + rsl2);
     }
