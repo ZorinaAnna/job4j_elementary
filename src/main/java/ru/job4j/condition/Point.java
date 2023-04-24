@@ -10,7 +10,6 @@ public class Point {
     }
 
     public double distance(Point that) {
-
         return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 
@@ -20,7 +19,7 @@ public class Point {
 
     public static void main(String[] args) {
 
-        int x1 = 2;
+        int x1 = 1;
         int y1 = 6;
         int x2 = 5;
         int y2 = 9;
