@@ -9,7 +9,7 @@ public class Greeting {
         String id = idea + separate + truth;
         System.out.println(id);
         int year = 2023;
-        String ideaPluYear = idea + year;
-        System.out.println(ideaPluYear);
+        idea = idea + year;
+        System.out.println(idea);
     }
 }
