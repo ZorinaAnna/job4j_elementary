@@ -27,7 +27,6 @@ public class Converter {
         dollars = euroToDollar(18);
         System.out.println("18 euro is " + dollars + " dollars.");
 
-        // Тесты
         float input = 140;
         float expected = 1.6279069F;
         float output = rubleToEuro(input);
