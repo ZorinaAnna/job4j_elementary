@@ -24,18 +24,18 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert567RubleThen7dot714286Dollar() {
+    void whenConvert567RubleThen7dot5930233Dollar() {
         float input = 567;
-        float expected = 7.714286F;
+        float expected = 6.5930233f;
         float output = Converter.rubleToEuro(input);
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
     @Test
-    void whenConvert18EuroThen21dot06Dollar() {
+    void whenConvert18EuroThen0dot24489796Dollar() {
         float input = 18;
-        float expected = 21.06F;
+        float expected = 0.24489796f;
         float output = Converter.rubleToDollar(input);
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
