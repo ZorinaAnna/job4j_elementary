@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class X2Test {
 
     @Test
-    void whenA1B1C1X1Then0() {
+    void whenA1B1C1X1Then3() {
         int a = 1;
         int b = 1;
         int c = 1;
