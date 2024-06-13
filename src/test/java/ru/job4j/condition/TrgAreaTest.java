@@ -8,10 +8,10 @@ import static org.assertj.core.api.Assertions.withPrecision;
 class TrgAreaTest {
 
     @Test
-    void whenP6K2Square2() {
-        double expected = 2;
-        int p = 6;
-        double k = 2;
+    void whenP8K4Square8() {
+        double expected = 8;
+        int p = 8;
+        double k = 4;
         double output = TrgArea.area(p, k, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
