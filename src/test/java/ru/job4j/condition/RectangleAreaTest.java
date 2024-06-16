@@ -5,32 +5,32 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.withPrecision;
 
-class TrgAreaTest {
+class RectangleAreaTest {
 
     @Test
-    void whenP8K4Square8() {
-        double expected = 8;
-        int p = 8;
+    void whenP20K4Square16() {
+        double expected = 16;
+        double p = 20;
         double k = 4;
-        double output = TrgArea.area(p, k, k);
+        double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void whenP9K3Square6() {
-        double expected = 6;
-        int p = 9;
+    void whenP16K3Square12() {
+        double expected = 12;
+        double p = 16;
         double k = 3;
-        double output = TrgArea.area(p, k, k);
+        double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void whenP10K4Square8() {
-        double expected = 8;
-        int p = 10;
-        double k = 4;
-        double output = TrgArea.area(p, k, k);
+    void whenP8K1Square4() {
+        double expected = 4;
+        double p = 8;
+        double k = 1;
+        double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
