@@ -1,34 +1,43 @@
 package ru.job4j.calculator;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
+public class CounterTest {
 
-class CounterTest {
     @Test
-    void whenSumEvenNumbersFromOneToTenThenThirty() {
-        int start = 1;
-        int finish = 10;
-        int result = Counter.sumByEven(start, finish);
-        int expected = 30;
-        assertThat(result).isEqualTo(expected);
+    public void whenSumFromZeroToTenThenFiftyFive() {
+        int result = Counter.sum(0, 10);
+        assertEquals(55, result);
     }
 
     @Test
-    void whenSumEvenNumbersFromTenToHundredThenTwoThousandFiveHundredAndThirty() {
-        int start = 10;
-        int finish = 100;
-        int result = Counter.sumByEven(start, finish);
-        int expected = 2530;
-        assertThat(result).isEqualTo(expected);
+    public void whenSumFromThreeToEightThenThirtyThree() {
+        int result = Counter.sum(3, 8);
+        assertEquals(33, result);
     }
 
     @Test
-    void whenSumEvenNumbersFromMinusTenToOneThenMinusThirty() {
-        int start = -10;
-        int finish = 1;
-        int result = Counter.sumByEven(start, finish);
-        int expected = -30;
-        assertThat(result).isEqualTo(expected);
+    public void whenSumFromOneToOneThenOne() {
+        int result = Counter.sum(1, 1);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void whenSumByEvenFromZeroToTenThenThirty() {
+        int result = Counter.sumByEven(0, 10);
+        assertEquals(30, result);
+    }
+
+    @Test
+    public void whenSumByEvenFromThreeToEightThenEighteen() {
+        int result = Counter.sumByEven(3, 8);
+        assertEquals(18, result);
+    }
+
+    @Test
+    public void whenSumByEvenFromOneToOneThenZero() {
+        int result = Counter.sumByEven(1, 1);
+        assertEquals(0, result);
     }
 }
