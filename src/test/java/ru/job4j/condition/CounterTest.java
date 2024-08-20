@@ -22,6 +22,7 @@ public class CounterTest {
         int result = Counter.sum(1, 1);
         assertEquals(1, result);
     }
+
     @Test
     public void whenSumFrom2To1Then3() {
         int result = Counter.sum(2, 1);
