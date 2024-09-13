@@ -16,8 +16,8 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        System.out.println("Факториал 5: " + calculate(5)); // 120
-        System.out.println("Факториал 0: " + calculate(0)); // 1
-        System.out.println("Факториал -1: " + calculate(-1)); // ошибк
+        System.out.println("Факториал 5: " + calculate(5));
+        System.out.println("Факториал 0: " + calculate(0));
+        System.out.println("Факториал -1: " + calculate(-1));
     }
 }
