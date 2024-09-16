@@ -3,7 +3,7 @@ package ru.job4j.calculator;
 public class Factorial {
     public static int calculate(int number) {
         if (number < 0) {
-            System.out.println("n must be non-negative");
+            System.out.println("n must be positive");
         }
 
         int result = 1;
