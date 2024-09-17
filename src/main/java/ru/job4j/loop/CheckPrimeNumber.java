@@ -14,13 +14,5 @@ public class CheckPrimeNumber {
 
         return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println(check(4));
-        System.out.println(check(5));
-        System.out.println(check(1));
-        System.out.println(check(2));
-        System.out.println(check(9));
-    }
 }
 
