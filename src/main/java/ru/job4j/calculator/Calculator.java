@@ -24,7 +24,6 @@ public class Calculator {
         int fourTimesTwo = four * two;
         System.out.println(fourTimesTwo);
 
-        // Вызовы метода plus
         System.out.println(plus(100, 500));
         System.out.println(plus(4, 2));
         System.out.println(plus(3, 5));
