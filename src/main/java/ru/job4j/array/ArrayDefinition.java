@@ -11,5 +11,19 @@ public class ArrayDefinition {
 
         float[] prices = new float[41];
         System.out.println("Размер массива prices равен: " + prices.length);
+
+        /* Создание массива names на 4 ячейки */
+        String[] names = new String[4];
+
+        /* Заполнение массива произвольными именами */
+        names[0] = "Petr Arsentev";
+        names[1] = "Anna Zorina";
+        names[2] = "Varvara Mamina";
+        names[3] = "Anton Ivanov";
+
+        System.out.println(names[0]);
+        System.out.println(names[1]);
+        System.out.println(names[2]);
+        System.out.println(names[3]);
+        }
     }
-}
