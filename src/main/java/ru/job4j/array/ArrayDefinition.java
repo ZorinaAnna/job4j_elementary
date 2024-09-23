@@ -21,9 +21,9 @@ public class ArrayDefinition {
         names[2] = "Varvara Mamina";
         names[3] = "Anton Ivanov";
 
-        System.out.println(names[0]);
-        System.out.println(names[1]);
-        System.out.println(names[2]);
-        System.out.println(names[3]);
+        /* Использование цикла for-each для вывода имен */
+        for (String name : names) {
+            System.out.println(name);
         }
     }
+}
