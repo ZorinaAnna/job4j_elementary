@@ -35,12 +35,4 @@ class SwitchArrayTest {
         int[] expected = {1};
         assertThat(result).containsExactly(expected);
     }
-
-    @Test
-    void swapBorder() {
-    }
-
-    @Test
-    void main() {
-    }
 }
