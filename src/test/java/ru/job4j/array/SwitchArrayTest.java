@@ -56,6 +56,4 @@ class SwitchArrayTest {
         int[] expected = {1, 4, 3, 2, 5};
         assertThat(result).containsExactly(expected);
     }
-
-
 }
