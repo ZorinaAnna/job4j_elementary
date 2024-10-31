@@ -6,6 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MatrixCheckTest {
     @Test
     public void whenHasMonoHorizontal() {
+
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -15,6 +16,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isTrue();
     }
+
     @Test
     public void monoVertical() {
         char[][] input = {
