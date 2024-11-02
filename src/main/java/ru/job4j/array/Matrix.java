@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 public class Matrix {
+
     @SuppressWarnings({"checkstyle:MethodLength", "checkstyle:EmptyLineSeparator"})
     public static int[][] multiple(int size) {
         int[][] table = new int[size][size];
